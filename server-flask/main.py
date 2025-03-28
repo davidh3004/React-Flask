@@ -11,7 +11,16 @@ def hello_world():
 @app.route('/api/users')
 def get_users():
     return {
-        "users": ['Alice', 'Bob', 'Charlie'],
+        "users": [
+            {'id': 1,
+             'name': 'Alice'
+            },
+            {'id': 2,
+             'name': 'Bob'
+            },
+            {'id': 3,
+             'name': 'Juan'
+            }],
     }
 
 @app.route('/api/fruits')
